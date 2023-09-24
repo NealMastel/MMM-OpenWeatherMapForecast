@@ -13,9 +13,8 @@
     units - one of "metric", "imperial", or "" (blank)
     lang - Any of the languages OpenWeather supports, as listed here: https://openweathermap.org/api/one-call-api#multi
 
-  The DarkSky-compatible API request looks like this:
-
-    https://api.openweathermap.org/data/2.5/onecall?lat=LATITUDE&lon=LONGITUDE&units=XXX&lang=YY&appid=API_KEY
+  The One Call compatible API request looks like this:
+    https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
 
 *********************************/
 
@@ -41,7 +40,7 @@ module.exports = NodeHelper.create({
             } else {
 
                 //make request to OpenWeather onecall API
-                var url = "https://api.openweathermap.org/data/2.5/onecall" +
+                var url = "https://api.openweathermap.org/data/3.0/onecall" +
                     "?appid=" + payload.apikey +
                     "&lat=" + payload.latitude +
                     "&lon=" + payload.longitude +
