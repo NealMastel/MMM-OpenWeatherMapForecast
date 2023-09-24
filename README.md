@@ -29,7 +29,7 @@ At a minimum you need to supply the following required configuration parameters:
 
 * `apikey`
     MMM-OpenWeatherMapForecast will now require OpenWeather One Call API 3.0
-    https://home.openweathermap.org/subscriptions A payment option will need to be entered, however under normal circumstances
+    `https://home.openweathermap.org/subscriptions` A payment option will need to be entered, however under normal circumstances
     the free level (1000 calls per day) should not be exceeded.  The account can also be set to have 1000 calls per day (no more than) max.
 * `latitude`
 * `longitude`
