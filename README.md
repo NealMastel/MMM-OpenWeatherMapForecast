@@ -18,7 +18,7 @@ much of the same functionality.
 ## Installation
 
 1. Navigate into your MagicMirror `modules` folder and execute<br>
-`git clone https://github.com/MarcLandis/MMM-OpenWeatherMapForecast.git`.
+`git clone https://github.com/NealMastel/MMM-OpenWeatherMapForecast.git`.
 2. Enter the new `MMM-OpenWeatherMapForecast` directory and execute `npm install`.
 
 
@@ -28,13 +28,14 @@ much of the same functionality.
 At a minimum you need to supply the following required configuration parameters:
 
 * `apikey`
+    MMM-OpenWeatherMapForecast will now require OpenWeather One Call API 3.0
+    https://home.openweathermap.org/subscriptions A payment option will need to be entered, however under normal circumstances
+    the free level (1000 calls per day) should not be exceeded.  The account can also be set to have 1000 calls per day (no more than) max.
 * `latitude`
 * `longitude`
 
 You can request an API key to access data here:
-`https://openweathermap.org/api/one-call-api`.
-
-Free tier is fine -- this module will not make any where near 1000 request on one day.
+`https://openweathermap.org/api/one-call-3`.
 
 Find out your latitude and longitude here:
 `https://www.latlong.net/`.
